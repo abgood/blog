@@ -32,16 +32,6 @@ CREATE TABLE `blog_categories` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `blog_categories`
---
-
-LOCK TABLES `blog_categories` WRITE;
-/*!40000 ALTER TABLE `blog_categories` DISABLE KEYS */;
-INSERT INTO `blog_categories` VALUES (1,'技术','technology','收录技术类的文章');
-/*!40000 ALTER TABLE `blog_categories` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `blog_comments`
 --
 
@@ -63,15 +53,6 @@ CREATE TABLE `blog_comments` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `blog_comments`
---
-
-LOCK TABLES `blog_comments` WRITE;
-/*!40000 ALTER TABLE `blog_comments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `blog_comments` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `blog_extend`
 --
 
@@ -90,15 +71,6 @@ CREATE TABLE `blog_extend` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `blog_extend`
---
-
-LOCK TABLES `blog_extend` WRITE;
-/*!40000 ALTER TABLE `blog_extend` DISABLE KEYS */;
-/*!40000 ALTER TABLE `blog_extend` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `blog_meta`
 --
 
@@ -111,16 +83,6 @@ CREATE TABLE `blog_meta` (
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `blog_meta`
---
-
-LOCK TABLES `blog_meta` WRITE;
-/*!40000 ALTER TABLE `blog_meta` DISABLE KEYS */;
-INSERT INTO `blog_meta` VALUES ('auto_published_comments','0'),('comment_moderation_keys',''),('comment_notifications','0'),('current_migration','140'),('date_format','jS M, Y'),('description','Just do it'),('home_page','1'),('last_update_check','2014-07-12 19:31:26'),('posts_page','1'),('posts_per_page','6'),('sitename','jun爷的窝'),('theme','default'),('update_version','0.9.2');
-/*!40000 ALTER TABLE `blog_meta` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `blog_page_meta`
@@ -139,15 +101,6 @@ CREATE TABLE `blog_page_meta` (
   KEY `extend` (`extend`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `blog_page_meta`
---
-
-LOCK TABLES `blog_page_meta` WRITE;
-/*!40000 ALTER TABLE `blog_page_meta` DISABLE KEYS */;
-/*!40000 ALTER TABLE `blog_page_meta` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `blog_pages`
@@ -174,16 +127,6 @@ CREATE TABLE `blog_pages` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `blog_pages`
---
-
-LOCK TABLES `blog_pages` WRITE;
-/*!40000 ALTER TABLE `blog_pages` DISABLE KEYS */;
-INSERT INTO `blog_pages` VALUES (1,0,'posts','文章','我的文章','欢迎来到我的文章','published','',1,0);
-/*!40000 ALTER TABLE `blog_pages` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `blog_post_meta`
 --
 
@@ -200,15 +143,6 @@ CREATE TABLE `blog_post_meta` (
   KEY `extend` (`extend`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `blog_post_meta`
---
-
-LOCK TABLES `blog_post_meta` WRITE;
-/*!40000 ALTER TABLE `blog_post_meta` DISABLE KEYS */;
-/*!40000 ALTER TABLE `blog_post_meta` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `blog_posts`
@@ -237,15 +171,6 @@ CREATE TABLE `blog_posts` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `blog_posts`
---
-
-LOCK TABLES `blog_posts` WRITE;
-/*!40000 ALTER TABLE `blog_posts` DISABLE KEYS */;
-/*!40000 ALTER TABLE `blog_posts` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `blog_sessions`
 --
 
@@ -259,15 +184,6 @@ CREATE TABLE `blog_sessions` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `blog_sessions`
---
-
-LOCK TABLES `blog_sessions` WRITE;
-/*!40000 ALTER TABLE `blog_sessions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `blog_sessions` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `blog_users`
@@ -288,16 +204,6 @@ CREATE TABLE `blog_users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `blog_users`
---
-
-LOCK TABLES `blog_users` WRITE;
-/*!40000 ALTER TABLE `blog_users` DISABLE KEYS */;
-INSERT INTO `blog_users` VALUES (1,'lvjun','$2a$10$QzNgbM1Xazi8W8otEOVvJeXYx38/G6nqadSWHpoqMxrB7s04DNAdi','abgood@sina.com','Administrator','The bouse','active','administrator');
-/*!40000 ALTER TABLE `blog_users` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -308,4 +214,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-07-13 13:53:25
+-- Dump completed on 2014-07-13 13:55:37
