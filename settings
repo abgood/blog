@@ -1,0 +1,6 @@
+1. anchor themes: http://anchorthemes.com/
+2. ALTER TABLE `blog_pages` CHANGE `menu_order` `menu_order` INT(4) NULL DEFAULT '0';
+
+3. location / {
+    try_files $uri $uri/ /index.php;
+}
